@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+/* 顶部 */
+.header-nav{
+    width: 100%;
+    height: 640.83px;
+    background-image: url("../picture/top-piture.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1519px 640.83px;
+    cursor: pointer;
+}
+.header-nav .wrap{
+    width: 100%;
+    height: 64px;    
+    background-color: transparent;
+    line-height: 64px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+.wrap .icon img{
+    width: 34px;
+    height: 34px;
+    position: relative;
+    left: -55px;
+    top: 11px;
+}
+.header-nav .wrap li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.header-nav .wrap li a{
+    color: #FFFFFF;
+    font-family: MiSans, serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+/* 轮播图 */
+.slider{
+    width: 100%;
+    height: 640.83px;
+}
+.sliders img{
+    width: 1519px;
+    height: 640.83px;
+    display: block;
+}
+.carousel-progress{
+    position: absolute;
+    top: 1200px;
+    left: 40%;
+}
+.carousel-progress .progress-1{
+    display: inline-block;
+    width: 6.27rem;
+    height: 3px;
+    text-align: center;
+    color: #000;
+    opacity: .7;
+    background: #b2b2b2;
+    transition: all .1s;
+    border-radius: 0;
+}
+.carousel-progress .active{
+    background: orange;
+}
+.slider-image{
+    transition: opacity 0.5s ease;
+}
