@@ -6,10 +6,8 @@ const slider = document.querySelector('.slider')
    
 progress.addEventListener('click',function(e){
     if(e.target.tagName === 'SPAN'){
-        let num = +e.target.dataset.id                
-        sliders.innerHTML = `<img src="./picture/slider${num}.jpeg" alt="">`
-        //平滑播放效果
-        sliders.style.transform = `translateX(-${(num-1) * 100}%)`;
+        let num = +e.target.dataset.id             
+        sliders.innerHTML = `<img src="./picture/slider${num}.jpeg" alt="" class="slider-image">`
         //移除类
         progress.querySelector('.active').classList.remove('active')
         //添加类 
