@@ -32,6 +32,7 @@ a{
     position: relative;
     left: -55px;
     top: 11px;
+    border-radius: 14px;
 }
 .header-nav .wrap li{
     display: inline-block;
@@ -47,6 +48,7 @@ a{
 .slider{
     width: 100%;
     height: 640.83px;
+    margin-top: 20px;
 }
 .sliders img{
     width: 1519px;
@@ -72,6 +74,7 @@ a{
 .carousel-progress .active{
     background: orange;
 }
+/* 平滑效果 */
 .slider-image{
     transition: opacity 0.5s ease;
 }
