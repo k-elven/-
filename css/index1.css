@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.header-nav .wrap.follow{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #000;
+}
+/* 顶部 */
+.header-nav{
+    width: 100%;
+    height: 640.83px;
+    background-image: url("../picture/top-piture.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1519px 640.83px;
+
+}
+.header-nav .wrap{
+    width: 100%;
+    height: 64px;    
+    background-color: transparent;
+    line-height: 64px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+.wrap .icon img{
+    width: 34px;
+    height: 34px;
+    position: relative;
+    left: -55px;
+    top: 11px;
+    border-radius: 14px;
+}
+.header-nav .wrap li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.header-nav .wrap li a:hover{
+    color: #ff6900;;
+}
+
+.header-nav .wrap .active{
+    color: #ff6900;;
+}
+.header-nav .wrap li a{
+    color: #FFFFFF;
+    font-family: MiSans, serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+/* 轮播图 */
+.slider{
+    width: 100%;
+    height: 640.83px;
+    margin-top: 16px;
+    transition: transform 0.5s ease; /* 平滑过渡效果 */
+}
+.sliders img{
+    width: 1519px;
+    height: 640.83px;
+    display: block;
+}
+
+/* 三个span */
+.carousel-progress{
+    position: absolute;
+    top: 1200px;
+    left: 40%;
+}
+.carousel-progress .progress-1{
+    display: inline-block;
+    width: 6.27rem;
+    height: 3px;
+    text-align: center;
+    color: #000;
+    opacity: .7;
+    background: #b2b2b2;
+    transition: all .1s;
+    border-radius: 0;
+}
+.carousel-progress .active{
+    background: orange;
+}
+.carousel-progress span:hover{
+    background-color: red;
+}
+
+
+/* 左右箭头 */
+.slider .left , .slider .right{
+    font-weight: bold;  
+    font-size: 35px;  
+    transition: 0.6s ease;  
+    border-radius: 0 3px 3px 0;
+    transform: translateY(-50%);
+    color: white; 
+    transition: 0.6s ease;
+}
+
+/* 左右箭头颜色问题 */
+
+/* .left:hover , .right:hover{
+    color: orange;
+} */
+.slider .left{
+    position: absolute;
+    top: 961px;
+    left: 10px;
+}
+.slider .right{
+    position: absolute;
+    top: 961px;
+    right: 10px;
+}
+
+
+/* 轮播图2 */
+
+/* 三个span */
+.carousel-progress-1{
+    position: absolute;
+    top: 1870px;
+    left: 40%;
+}
+.carousel-progress-1 .progress-1{
+    display: inline-block;
+    width: 6.27rem;
+    height: 3px;
+    text-align: center;
+    color: #000;
+    opacity: .7;
+    background: #b2b2b2;
+    transition: all .1s;
+    border-radius: 0;
+}
+.carousel-progress-1 .active{
+    background: orange;
+}
+.carousel-progress-1 span:hover{
+    background-color: red;
+}
+
+
+/* 左右箭头 */
+.slider .left1 , .slider .right1{
+    font-weight: bold;  
+    font-size: 35px;  
+    transition: 0.6s ease;  
+    border-radius: 0 3px 3px 0;
+    transform: translateY(-50%);
+    color: white; 
+    transition: 0.6s ease;
+}
+
+/* 左右箭头颜色问题 */
+
+/* .left:hover , .right:hover{
+    color: orange;
+} */
+.slider .left1{
+    position: absolute;
+    top: 1635px;
+    left: 10px;
+}
+.slider .right1{
+    position: absolute;
+    top: 1635px;
+    right: 10px;
+}
+
+
+
+/* 右侧底部按钮 */
+.bottom-box{
+    width: 42px;
+    height: 62px;
+    position: absolute;
+    top: 508px;
+    left: 1382px;
+    display: none;
+}
+.bottom-box img{
+    width: 42px;
+    height: 62px;
+}
+/* 底部表格 */
+table{
+    margin: 0 auto;
+    padding: 40px 0;
+
+}
