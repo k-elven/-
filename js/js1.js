@@ -1,14 +1,24 @@
 /* 获取元素 */
+//导航栏
 const imgs = document.querySelector('.sliders img')
 const spans = document.querySelectorAll('.carousel-progress span')
 const progress = document.querySelector('.carousel-progress')
+//主体-轮播图
 const sliders = document.querySelector('.sliders')
 const slider = document.querySelector('.slider')
 const left = document.querySelector('.slider .left')
 const right = document.querySelector('.slider .right')
 
+const left1 = document.querySelector('.slider .left1')
+const right1 = document.querySelector('.slider .right1')
+const spans1 = document.querySelectorAll('.carousel-progress-1 span')
+const progress1 = document.querySelector('.carousel-progress-1')
+//箭头按钮
 const bottomBox = document.querySelector('.bottom-box')
+
+
 /* 轮播图模块 */
+
 
 //三个span点击对应图片
 progress.addEventListener('click',function(e){
@@ -64,7 +74,7 @@ right.addEventListener('click', e => {
     }
 })
 left.addEventListener('click', e => {
-    // // let num = 3
+    // let num = 3
     e.preventDefault()
     //移除所有 span 上 active 类
     if (index === 1){
@@ -87,6 +97,13 @@ left.addEventListener('click', e => {
         spans[index-2].classList.add('active')
         index--
     }
+})
+//---------第二个轮播图效果----------
+left1.addEventListener('click',e =>{
+    e.preventDefault()
+})
+right1.addEventListener('click',e =>{
+    e.preventDefault()
 })
 
 //返回页面最顶部

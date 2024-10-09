@@ -45,6 +45,13 @@ a{
     display: inline-block;
     padding: 0 10px;
 }
+.header-nav .wrap li a:hover{
+    color: #ff6900;;
+}
+
+.header-nav .wrap .active{
+    color: #ff6900;;
+}
 .header-nav .wrap li a{
     color: #FFFFFF;
     font-family: MiSans, serif;
@@ -175,11 +182,20 @@ a{
 
 /* 右侧底部按钮 */
 .bottom-box{
-    width: 60px;
-    height: 60px;
+    width: 42px;
+    height: 62px;
     position: absolute;
     top: 508px;
-    left: 1278px;
-    background-color: red;
+    left: 1382px;
     display: none;
+}
+.bottom-box img{
+    width: 42px;
+    height: 62px;
+}
+/* 底部表格 */
+table{
+    margin: 0 auto;
+    padding: 40px 0;
+
 }
